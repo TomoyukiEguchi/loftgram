@@ -19,8 +19,8 @@
                             <img class="post-profile-icon round-img" src="/images/blank_profile.png"/>
                         @endif
                       </div>
-                      <div class="black-color no-text-decoration" title="{{ $user->name }}" href="/users/{{ $user->id }}">
-                        <strong>{{ $user->username }}</strong>
+                      <div title="{{ $user->name }}">
+                        <strong><a class="black-color no-text-decoration" href="/users/{{ $user->id }}">{{ $user->username }}</a></strong>
                       </div>
                       
                       <span style="position: absolute; right: 0">
