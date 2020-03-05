@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
   <head>
-    <title>{{ config('app.name', 'Laravelgram') }}</title>
+    <!--<title>{{ config('app.name', 'Loftgram') }}</title>-->
+    <title>@yield('title', 'Loftgram')</title>
+    
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
@@ -16,7 +18,7 @@
   </head>
 
   <body>
-      
+    
     @yield('navbar')
     
     <div class="container">
