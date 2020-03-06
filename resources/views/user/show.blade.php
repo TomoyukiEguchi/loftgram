@@ -30,8 +30,8 @@
       <div class="row">
         <div class="d-flex">
           <div class="pr-5"><strong>{{ $user->posts->count() }}</strong> posts</div>
-          <div class="pr-5"><a class="black-color no-text-decoration" href="{{ route('users.followers', ['id' => $user->id]) }}"><strong>{{ $user->followers->count() }}</strong> followers</a></div>
-          <div class="pr-5"><a class="black-color no-text-decoration" href="{{ route('users.followings', ['id' => $user->id]) }}"><strong>{{ $user->followings->count() }}</strong> following</a></div>
+          <div class="pr-5"><a class="black-color no-text-decoration text-dark" href="{{ route('users.followers', ['id' => $user->id]) }}"><strong>{{ $user->followers->count() }}</strong> followers</a></div>
+          <div class="pr-5"><a class="black-color no-text-decoration text-dark" href="{{ route('users.followings', ['id' => $user->id]) }}"><strong>{{ $user->followings->count() }}</strong> following</a></div>
         </div>
       </div>
       

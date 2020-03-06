@@ -36,4 +36,22 @@ class LikesController extends Controller
         $like->delete();
         return redirect()->back();
     }
+    
+    
+    public function likes($id) {
+        
+        $user = Post::find($id);
+        $likes_users = $user->likes()->paginate(10);
+        
+        $data = [
+            'user' => $user,
+            'users' => $likes_users,
+        ];
+        
+        //dd($data);
+        
+        //$data += $this->counts($user);
+        
+        return view('user/likes', $data);
+    }
 }

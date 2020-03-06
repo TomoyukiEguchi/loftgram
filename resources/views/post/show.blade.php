@@ -24,7 +24,7 @@
                     <img class="post-profile-icon round-img" src="/images/blank_profile.png"/>
                 @endif
               </a>
-              <a class="black-color no-text-decoration" title="{{ $post->user->username }}" href="/users/{{ $post->user->id }}">
+              <a class="black-color no-text-decoration text-dark" title="{{ $post->user->username }}" href="/users/{{ $post->user->id }}">
                 <strong>{{ $post->user->username }}</strong>
               </a>
               

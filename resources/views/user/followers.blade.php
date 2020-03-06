@@ -20,7 +20,7 @@
                         @endif
                       </div>
                       <div title="{{ $user->name }}">
-                        <strong><a class="black-color no-text-decoration" href="/users/{{ $user->id }}">{{ $user->username }}</a></strong>
+                        <strong><a class="black-color no-text-decoration text-dark" href="/users/{{ $user->id }}">{{ $user->username }}</a></strong>
                       </div>
                       
                       <span style="position: absolute; right: 0">

@@ -47,6 +47,10 @@ Route::get('/posts/{post_id}/likes', 'LikesController@store');
 Route::get('/likes/{like_id}', 'LikesController@destroy');
 
 
+// Like Users
+Route::get('/posts/{post_id}/likes/users', 'LikesController@likes')->name('likes.users');
+
+
 //----------- CommentsController -----------//
 // Comment
 Route::post('/posts/{comment_id}/comments','CommentsController@store');
