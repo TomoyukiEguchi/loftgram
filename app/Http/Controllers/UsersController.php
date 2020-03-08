@@ -40,6 +40,7 @@ class UsersController extends Controller
         // validation: check values
         $validator = Validator::make($request->all() , [
             'user_name' => 'required|string|max:255',
+            'user_username' => 'required|string|max:255',
             'user_password' => 'required|string|min:6|confirmed',
             ]);
 
@@ -51,6 +52,7 @@ class UsersController extends Controller
         
         $user = User::find($request->id);
         $user->name = $request->user_name;
+        $user->username = $request->user_username;
         if ($request->user_profile_photo !=null) {
             // read 'user_profile_photo'
             $image = $request->file('user_profile_photo');
